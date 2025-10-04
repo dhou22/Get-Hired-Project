@@ -1,7 +1,9 @@
-# Get-Hired-Project
+# Get Hired Project - AI Recruitement Assistant
 -----
 <img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/21b6f1a9-2a72-422e-9b45-c56c532484d6" />
+
 -----
+
 A machine learning project that leverages HuggingFace transformers and Weaviate vector database to create semantic embeddings of resumes for intelligent matching and retrieval.
 
 ## 📋 Overview
