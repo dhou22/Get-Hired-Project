@@ -295,20 +295,10 @@ print(f"Failed: {stats['failure_count']} resumes")
 | DevOps | 189 | Cloud Engineer, SRE |
 | Mobile Development | 156 | iOS Developer, Android Engineer |
 
-### Data Schema
+### Data Schema in Weaviate
 
-```python
-{
-    "resume_id": "unique identifier",
-    "category": "job category",
-    "resume_text": "original text",
-    "preprocessed_text": "cleaned text",
-    "skills": ["skill1", "skill2"],
-    "experience_years": 5,
-    "education": "degree information",
-    "processing_date": "2025-10-05T12:00:00Z"
-}
-```
+<img width="1890" height="906" alt="Capture d'écran 2025-10-04 221249" src="https://github.com/user-attachments/assets/759af581-3e41-46fa-8cba-bc67a1de1a81" />
+
 
 ---
 
