@@ -272,6 +272,7 @@ print(f"Failed: {stats['failure_count']} resumes")
 ---
 
 ## Dataset
+Dataset source on Kaggle : https://www.kaggle.com/datasets/gauravduttakiit/resume-dataset
 
 <div align="center">
 
@@ -304,9 +305,6 @@ print(f"Failed: {stats['failure_count']} resumes")
 
 ## Resume Processing Pipeline
 
-<div align="center">
-
-![Preprocessing Pipeline](https://github.com/user-attachments/assets/5f9e0afa-3de2-4902-a7a3-4a9273101a20)
 
 </div>
 
@@ -385,8 +383,14 @@ def preprocess_resume(text):
 | all-MiniLM-L6-v2 | 384 | Slower | Excellent | Excellent |
 
 ### Model Details
+-------
 
-#### CBOW (Continuous Bag of Words)
+### Word2VC models
+
+<img width="1400" height="725" alt="image" src="https://github.com/user-attachments/assets/579d4d97-cff8-4ac3-b46e-b6e4e8b694a5" />
+
+
+#### 1. CBOW (Continuous Bag of Words)
 
 **Strengths:**
 - Fast inference speed (~0.1ms per resume)
@@ -404,7 +408,7 @@ def preprocess_resume(text):
 - Domain-specific vocabularies
 - Resource-constrained environments
 
-#### Skip-gram
+#### 2. Skip-gram
 
 **Strengths:**
 - Better semantic relationships
@@ -422,7 +426,9 @@ def preprocess_resume(text):
 - Small to medium datasets
 - Custom corpus training
 
-#### Sentence Transformer (all-MiniLM-L6-v2)
+### Sentence Transformer (all-MiniLM-L6-v2)
+hugging face source model : https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
+<img width="1901" height="583" alt="Capture d'écran 2025-10-04 224155" src="https://github.com/user-attachments/assets/e21cc5e4-7cd3-4f9f-81fd-21e1ef322ef3" />
 
 **Strengths:**
 - Handles any word (no OOV issues)
